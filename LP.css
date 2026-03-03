@@ -1,0 +1,14 @@
+nav a:hover{
+    color: white;
+    text-decoration: none;
+}
+nav a{
+    color: white;
+    
+}
+footer img{
+    width: 10%;
+}
+body{
+    background-image:linear-gradient(to top, rgb(50, 50, 50), rgb(125, 125, 125)) ;
+}

@@ -1,0 +1,13 @@
+nav a{
+    color: aliceblue;
+}
+nav a:hover{
+    color: rgb(255, 100, 50);
+    text-decoration: none;
+}
+footer img{
+    width: 10%;
+}
+body{
+    background-image: linear-gradient(to top, rgb(50,50,50), rgb(200, 100, 50));
+}

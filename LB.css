@@ -1,0 +1,16 @@
+nav a{
+    color: white;
+}
+footer img{
+    width: 10%;
+}
+body{
+    background-image:linear-gradient(to top, rgb(50, 50, 50),  rgb(50, 50, 125)) ;
+}
+nav a:hover{
+    color: blue;
+    text-decoration: none;
+}   
+aside{
+    color: aliceblue;
+}

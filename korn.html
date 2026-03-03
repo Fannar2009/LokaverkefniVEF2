@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/pico.classless.grey.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+    <link rel="stylesheet" href="../CSS/Korn.css">
+    <title>Lokaverkefni</title>
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Linkin Park</a></li>
+                <li><a href="limp.html">Limp Bizkit</a></li>
+                <li><a href="korn.html">Korn</a></li>
+                <li><a href="slip.html">Slipknot</a></li>
+                <li><a href="#" id="showdialog">Netverslun</span></a></li>
+        </nav>
+        <header><h1>KoЯn</h1></header>
+        
+        <div class="articleaside">
+            <div class="articleaside2">
+                <div>
+                    <article class="article1">
+                        KoЯn var stofnað af James Shaffer, Reginald Arvizu og David Silveria en Reginald og David hættu 2021 og 2006. KoЯn fékk frægð sína eftir að hafa gefið út plötunar Korn, follow the leader og issues sem hafa frægu lögin falling away from me(issues), Blind(Korn), freak on a leash og got the life(follow the leader). 
+                        debut platan Korn var fyrst og fékk frægðina sem þeir voru að vonast yfir. Hljómsveitin fékk nafnið sitt útum allt og var þekkt hjá öllum 2000´s hljómsveitum eins og limp bizkit, slipknot, Deftones og linkin park. KoЯn hefur haft samtónleika með mörgum til dæmis Amy Lee(evanesence), Corey Taylor(Slipknot), Ice Cube og fleira. 
+                    </article>
+                </div>
+                <div>
+                    <article class="article2">
+                        KoЯn Ásamt Deftone voru valin til að spila með Ozzy Osbourne 1995. Á meðan þeir voru að gera það Fékk KoЯn Gold á plötuna þeirra og seinna varð það platinum. 2010 gaf út KoЯn tónlistarmyndband fyrir Freak on a leash. Vídjóið sjálft hefur um 400M veiws og lagið 750M. Myndbandið gaf þeim annað skot á en meiri frægð og það virkaði. Myndbandið var frægt fyrir hversu öðruvísi það var á tímanum líkt og sweating bullets notuðu þeir mikið af visual effects
+                    </article>
+                </div>
+            </div>
+            <div class="articlemynd">
+                <div>
+                    <aside class="aside">
+                        Hljómsveitin hefur unnið 2 af 8 grammys og 2 af 11 MTV awards. Frægustu plötunar þeirra eru Issues, Korn, Life is Peacy og follow the leader.
+                    </aside>
+                </div>
+                <div>
+                    <div class="slideshow">
+                        <div class="slider-buttons">
+                            <a href="#slide-1">1</a>
+                            <a href="#slide-2">2</a>
+                            <a href="#slide-3">3</a>
+                            <a href="#slide-4">4</a>
+                        </div>
+                        <div class="slides">
+                            <div id="slide-1">
+                                <img src="img/korn/issues.png" alt="">
+                                <figcaption>Issues
+                            </div>
+                            <div id="slide-2">
+                                <img src="img/korn/Korn.png" alt="">
+                                <figcaption>Korn
+                            </div>
+                            <div id="slide-3">
+                                <img src="img/korn/follow.png" alt="">
+                                <figcaption>Follow the leader
+                            </div>
+                            <div id="slide-4">
+                                <img src="img/korn/otherside.png" alt="">
+                                <figcaption>See you on the other side
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="img/korn/file (1).svg" alt=""><br>
+            =D<br>
+            Fannar Þór Valdimarsson(2026)
+        </footer>
+    </main>
+    <dialog id="dialogUsername&pass">
+        <article>
+            <header>
+                
+                <button aria-label="close" rel="prev" id="closedialog"></button>
+                <p>Plötubúð</p>
+            </header>
+            <div class="dialogmyndir">
+                <a href="##" id="showdialog2"><img src="img/korn/issues.png" alt=""></a>
+                <figcaption>9990kr</figcaption>
+                
+            </div>
+        </article>
+    </dialog>
+    <dialog id="kaupa">
+        <article>
+            <header>
+                
+                <button aria-label="close" rel="prev" id="closedialog2"></button>
+                <p>sláðu inn Kortaupplýsingar</p>
+            </header>
+            <form action="admin.html" method="get">
+                <label for="nafn">Notendanafn</label>
+                <input type="text" id="nafn" placeholder="Nafn" required>
+
+                <label for="Kort"></label>
+                <input type="text" id="Kort" placeholder="Kortanúmer" required>
+                
+                <input type="submit" value="Borga" class="submit_takki">
+            </form>
+        </article>
+    </dialog>
+    <script>
+
+        const openbutton = document.getElementById("showdialog")
+        const closebutton = document.getElementById("closedialog")
+        const dialog = document.getElementById("dialogUsername&pass")
+
+        openbutton.addEventListener('click', function(){
+            dialog.showModal();
+        });
+
+        closebutton.addEventListener('click', function(){
+            dialog.close();
+        });
+    </script>
+    <script>
+
+        const openbutton1 = document.getElementById("showdialog2")
+        const closebutton1 = document.getElementById("closedialog2")
+        const dialog1 = document.getElementById("kaupa")
+
+        openbutton1.addEventListener('click', function(){
+            dialog1.showModal();
+        });
+
+        closebutton1.addEventListener('click', function(){
+            dialog1.close();
+        });
+    </script>
+</body>
+</html>

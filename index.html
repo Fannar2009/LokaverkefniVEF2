@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/pico.classless.grey.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+    <link rel="stylesheet" href="../CSS/LP.css">
+    <title>Lokaverkefni</title>
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Linkin Park</a></li>
+                <li><a href="limp.html">Limp Bizkit</a></li>
+                <li><a href="korn.html">Korn</a></li>
+                <li><a href="slip.html">Slipknot</a></li>
+                <li><a href="#" id="showdialog">Netverslun</span></a></li>
+        </nav>
+        <header><h1>Linkin-Park</h1></header>
+        
+        <div class="articleaside">
+            <div class="articleaside2">
+                <div>
+                    <article class="article1">
+                        Hljómsveitin var stofnuð árið 1996 undir nafninu Xero. Hljómsveitin innihélt meðlimana Mike Shinoda og Chester Bennington sem voru söngvarar hljómsveitarinar og stofnendurnir, Brad Delson, Dave Farell og Rob Bourdon voru og eru gítar, bassa og trommu færendurnir. Joe Hahn er dj hljómsveitarinnar og hefur haft mikil áhrif á tónlistina. Árið 2000 gáfu þau út fyrstu almennu plötu þeirra sem heitir Hybrid theory sem varð best seljandi platan þeirra og frægust. Platan innheldur frægustu lög þeirra: In the end, One step closer og fleira. 2003 gáfu þau út seinni plötu sína Meteora og 2006 minutes to midnight. Þessar plötur innhéldu restina af frægum lögum eins og Numb, Given up, What i´ve done og Faint. Hljómsveitin gáfu út margar fleyri plötur sem voru elskaðar af öllum og gerði hljómsveitana vel þekkta. Því miður varð söngvarinn Chester Bennington fyrir sér sjálfum 2017 og með því hætti hljómsveitin að framleiða tónlist og spila tónleika í 7 ár.
+                    </article>
+                </div>
+                <div>
+                    <article class="article2">
+                        2023 tilkynnti hljómsveitin að nýr söngvari var kominn og að þau mynda halda áfram að framleiða tónlist og sýndu hratt nýju plötuna þeirra með Emily Armstrong kölluð: From Zero. Nafn plötunar merkir gamla nafn hljómsveitarinar Xero og merkir hvernig þau fengu nýjan söngvara. Hljómsveitin fékk hratt frægð sína til baka með ný góð lög eins og Emptieness Machine og Two Faced. Trommarin Rob Bourdon Hætti í kringum þennan tíma. hljómsvetin hefur unnið margar verðlaunir og haldið marga tónleika.  
+                    </article>
+                </div>
+            </div>
+            <div class="articlemynd">
+                <div>
+                    <aside class="aside">
+                        Mike Shinoda Stofnaði sína eigin hljómsveit sem kallast fort minor og með hjálp Joe Hahn gaf hann út frægasta lagið hans sem kallast Remeber the name sem segir frá hvernig hann eignaðist frægð sína. 
+                    </aside>
+                </div>
+                <div>
+                    <div class="slideshow">
+                        <div class="slider-buttons">
+                            <a href="#slide-1">1</a>
+                            <a href="#slide-2">2</a>
+                            <a href="#slide-3">3</a>
+                            <a href="#slide-4">4</a>
+                        </div>
+                        <div class="slides">
+                            <div id="slide-1">
+                                <img src="img/linkinpark/hybrid.png" alt="">
+                                <figcaption>Hybrid Theory
+                            </div>
+                            <div id="slide-2">
+                                <img src="img/linkinpark/meteora.png" alt="">
+                                <figcaption>Meteora
+                            </div>
+                            <div id="slide-3">
+                                <img src="img/linkinpark/minutes.png" alt="">
+                                <figcaption>Minutes To Midnight
+                            </div>
+                            <div id="slide-4">
+                                <img src="img/linkinpark/emptiness.png" alt="">
+                                <figcaption>From Zero
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="img/linkinpark/file.svg" alt=""><br>
+            =D<br>
+            Fannar Þór Valdimarsson(2026)
+        </footer>
+    </main>
+        <dialog id="dialogUsername&pass">
+        <article>
+            <header>
+                
+                <button aria-label="close" rel="prev" id="closedialog"></button>
+                <p>Plötubúð</p>
+            </header>
+            <div class="dialogmyndir">
+                <a href="##" id="showdialog2"><img src="img/linkinpark/hybrid.png" alt=""></a>
+                <figcaption>9990kr</figcaption>
+                
+            </div>
+        </article>
+    </dialog>
+    <dialog id="kaupa">
+        <article>
+            <header>
+                
+                <button aria-label="close" rel="prev" id="closedialog2"></button>
+                <p>sláðu inn Kortaupplýsingar</p>
+            </header>
+            <form action="admin.html" method="get">
+                <label for="nafn">Notendanafn</label>
+                <input type="text" id="nafn" placeholder="Nafn" required>
+
+                <label for="Kort"></label>
+                <input type="text" id="Kort" placeholder="Kortanúmer" required>
+                
+                <input type="submit" value="Borga" class="submit_takki">
+            </form>
+        </article>
+    </dialog>
+    <script>
+
+        const openbutton = document.getElementById("showdialog")
+        const closebutton = document.getElementById("closedialog")
+        const dialog = document.getElementById("dialogUsername&pass")
+
+        openbutton.addEventListener('click', function(){
+            dialog.showModal();
+        });
+
+        closebutton.addEventListener('click', function(){
+            dialog.close();
+        });
+    </script>
+    <script>
+
+        const openbutton1 = document.getElementById("showdialog2")
+        const closebutton1 = document.getElementById("closedialog2")
+        const dialog1 = document.getElementById("kaupa")
+
+        openbutton1.addEventListener('click', function(){
+            dialog1.showModal();
+        });
+
+        closebutton1.addEventListener('click', function(){
+            dialog1.close();
+        });
+    </script>
+</body>
+</html>

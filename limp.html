@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/pico.classless.grey.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+    <link rel="stylesheet" href="../CSS/LB.css">
+    <title>Lokaverkefni</title>
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Linkin Park</a></li>
+                <li><a href="limp.html">Limp Bizkit</a></li>
+                <li><a href="korn.html">Korn</a></li>
+                <li><a href="slip.html">Slipknot</a></li>
+                <li><a href="#" id="showdialog">Netverslun</span></a></li>
+        </nav>        
+        <header><h1>Limp-Bizkit</h1></header>
+        
+        <div class="articleaside">
+            <div class="articleaside2">
+                <div>
+                    <article class="article1">
+                        Stofnað af Fred Durst og Sam Rivers Limp bizkit varð frægt eftir að þeir gáfu út plötunar Significant Others og Choclate starfish. hljómsveitin gaf út mörg singles á sínum tíma eins og Nookie, Behind blue eyes og break stuff. þessi lög komu sér í plötur seinna eins og significant others og Results may vary. Hljómsveitn var stofnuð 1994 og meðlimarnir voru Fred Durst(Söngvari), Sam Rivers(Bassi, Bakgrun söngur), John Otto(Trommari) og Scott Borland(Gítar). frægð hljómsveitarinar fór jafn hratt og hún kom eftir að það varð deila eftir tónleikana í woodstock(1999) og Big out day(2001). Hljómsveitin átti erfit að byggja upp nafn sitt aftur og sumir segja að þeir muna aldrei fá það aftur. Nýlega gaf út netflix Teiknimynda seríu um fræga tölvuleikina Devil May Cry þar sem það var notað fræga lagið Break Stuff.
+                    </article>
+                </div>
+                <div>
+                    <article class="article2">
+                        Hljómsveitin hefur unnið nokkrar verðlaunir varðandi lög þeirra og plötur. Lögin þeirra rollin(air raid vehicle), Break stuff, Nookie, My generation og cover lagið Behind blue eyes eru frægust og þekktust. Hljómsveitin hefur 22.2M mánaðlega hlustendur og halda marga tónleika á árum. Því miður dó Sam Rivers stofnandi hljómsveitarinnar árið 2025 18 október. Þeir fengu frægð sína tilbaka en munu alttaf hafa nafnið Woodstock í höndum þeirra.
+                    </article>
+                </div>
+            </div>
+            <div class="articlemynd">
+                <div>
+                    <aside class="aside">
+                        Limp Bizkit Fékk stórt tæki færi eftir að Fred durst gaf hljómsveitini Korn Húðflúr. Fred Durst skaut skotið sitt og bað þá um að gefa þeim séns og hlusta á tónlistina sem þeir gerðu.
+                    </aside>
+                </div>
+                <div>
+                    <div class="slideshow">
+                        <div class="slider-buttons">
+                            <a href="#slide-1">1</a>
+                            <a href="#slide-2">2</a>
+                            <a href="#slide-3">3</a>
+                            <a href="#slide-4">4</a>
+                        </div>
+                        <div class="slides">
+                            <div id="slide-1">
+                                <img src="img/limpbiz/chocostar.png" alt="">
+                                <figcaption>choclate starfish
+                            </div>
+                            <div id="slide-2">
+                                <img src="img/limpbiz/goldcobra.png" alt="">
+                                <figcaption>Gold Cobra
+                            </div>
+                            <div id="slide-3">
+                                <img src="img/limpbiz/resultsmay.png" alt="">
+                                <figcaption>Results May Vary
+                            </div>
+                            <div id="slide-4">
+                                <img src="img/limpbiz/significant.png" alt="">
+                                <figcaption>Significant Others
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="img/limpbiz/file (2).svg" alt=""><br>
+            =D<br>
+            Fannar Þór Valdimarsson(2026)
+        </footer>
+    </main>
+    <dialog id="dialogUsername&pass">
+        <article>
+            <header>
+                
+                <button aria-label="close" rel="prev" id="closedialog"></button>
+                <p>Plötubúð</p>
+            </header>
+            <div class="dialogmyndir">
+                <a href="##" id="showdialog2"><img src="img/limpbiz/chocostar.png" alt=""></a>
+                <figcaption>9990kr</figcaption>
+                
+            </div>
+        </article>
+    </dialog>
+    <dialog id="kaupa">
+        <article>
+            <header>
+                
+                <button aria-label="close" rel="prev" id="closedialog2"></button>
+                <p>sláðu inn Kortaupplýsingar</p>
+            </header>
+            <form action="admin.html" method="get">
+                <label for="nafn">Notendanafn</label>
+                <input type="text" id="nafn" placeholder="Nafn" required>
+
+                <label for="Kort"></label>
+                <input type="text" id="Kort" placeholder="Kortanúmer" required>
+                
+                <input type="submit" value="Borga" class="submit_takki">
+            </form>
+        </article>
+    </dialog>
+    <script>
+
+        const openbutton = document.getElementById("showdialog")
+        const closebutton = document.getElementById("closedialog")
+        const dialog = document.getElementById("dialogUsername&pass")
+
+        openbutton.addEventListener('click', function(){
+            dialog.showModal();
+        });
+
+        closebutton.addEventListener('click', function(){
+            dialog.close();
+        });
+    </script>
+    <script>
+
+        const openbutton1 = document.getElementById("showdialog2")
+        const closebutton1 = document.getElementById("closedialog2")
+        const dialog1 = document.getElementById("kaupa")
+
+        openbutton1.addEventListener('click', function(){
+            dialog1.showModal();
+        });
+
+        closebutton1.addEventListener('click', function(){
+            dialog1.close();
+        });
+    </script>
+</body>
+</html>

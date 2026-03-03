@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/pico.classless.grey.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+    <link rel="stylesheet" href="../CSS/slip.css">
+    <title>Lokaverkefni</title>
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Linkin Park</a></li>
+                <li><a href="limp.html">Limp Bizkit</a></li>
+                <li><a href="korn.html">Korn</a></li>
+                <li><a href="slip.html">Slipknot</a></li>
+                <li><a href="#" id="showdialog">Netverslun</span></a></li>
+        </nav>
+        <header><h1>Slipknot</h1></header>
+        
+        <div class="articleaside">
+            <div class="articleaside2">
+                <div>
+                    <article class="article1">
+                        Slipknot er hröð þungarokk hljómsveit stofnuð árið 1995. Hljómsveitin hefur haft marga meðlima og eru með 8 núna. Meðlimar hljómsveitarinnar hafa oft breitt en þeir hættu í mörg ár eftir að hafa sátt sig með Joey Jordinson, Crahan, Gray, Mick Thomson, Corey Taylor, Sid Wilson, Chris Fehn og Jim Root. Joey Jordinson þurfti sörglega að hætta eftir að greiningin hans versnaði. Árið 2021 dó hann á aldrinum 46. hlutverk hljómsveitarinnar eru dreifð vel ásamt meðlimum og allir hafa sín hlutverk þó að þau séu minni en önnur.
+                    </article>
+                </div>
+                <div>
+                    <article class="article2">
+                        Slipknot gaf út fyrstu plötu sína en hún gekk ekki jafn vel og þeir vonuðust að hún myndi. Árum seinna gáfu þeir út plötuna Slipknot sem gekk miklu betur en sú fyrri og gaf þeim þekkinguna sem þeir vildu. Eftir nokkur fleiri ár gáfu þeir út vol. 3(the subliminal verses) og All hope is gone. Hljómsveitin klæðir sig í búninga fyrir allt sem tengist hljómsveitinni til dæmis viðtöl og aðra atburði. Hljómsveitin er núna vel þekkt fyrir sína hræðilegan klæðnað og plötur. Þó að hljómsveitin er ekki viðeigandi fyrir krakka til að hlusta á er hún miklu skárri en er lýst. Slipknot hefur haft sína áhorfendur yfir árin og er rosalega þekkt út um allan heim.
+                    </article>
+                </div>
+            </div>
+            <div class="articlemynd">
+                <div>
+                    <aside class="aside">
+                        Joey Jordinson festi sig við trommuset á eitt af tónleikum þeirra og spilaði á hvolfi og sýndi heiminum hæfileika sína á trommum
+                    </aside>
+                </div>
+                <div>
+                    <div class="slideshow">
+                        <div class="slider-buttons">
+                            <a href="#slide-1">1</a>
+                            <a href="#slide-2">2</a>
+                            <a href="#slide-3">3</a>
+                            <a href="#slide-4">4</a>
+                        </div>
+                        <div class="slides">
+                            <div id="slide-1">
+                                <img src="img/slipknot/Slipknot.png" alt="">
+                                <figcaption>Slipknot
+                            </div>
+                            <div id="slide-2">
+                                <img src="img/slipknot/subliminal.png" alt="">
+                                <figcaption>The subliminal verses
+                            </div>
+                            <div id="slide-3">
+                                <img src="img/slipknot/allhope.png" alt="">
+                                <figcaption>All hope is gone
+                            </div>
+                            <div id="slide-4">
+                                <img src="img/slipknot/the gray.png" alt="">
+                                <figcaption>The Gray chapter
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="img/slipknot/Slipknot logo.svg" alt=""><br>
+            =D<br>
+            Fannar Þór Valdimarsson(2026)
+        </footer>
+    </main>
+    <dialog id="dialogUsername&pass">
+        <article>
+            <header>
+                
+                <button aria-label="close" rel="prev" id="closedialog"></button>
+                <p>Plötubúð</p>
+            </header>
+            <div class="dialogmyndir">
+                <a href="##" id="showdialog2"><img src="img/slipknot/Slipknot.png" alt=""></a>
+                <figcaption>9990kr</figcaption>
+                
+            </div>
+        </article>
+    </dialog>
+    <dialog id="kaupa">
+        <article>
+            <header>
+                
+                <button aria-label="close" rel="prev" id="closedialog2"></button>
+                <p>sláðu inn Kortaupplýsingar</p>
+            </header>
+            <form action="admin.html" method="get">
+                <label for="nafn">Notendanafn</label>
+                <input type="text" id="nafn" placeholder="Nafn" required>
+
+                <label for="Kort"></label>
+                <input type="text" id="Kort" placeholder="Kortanúmer" required>
+                
+                <input type="submit" value="Borga" class="submit_takki">
+            </form>
+        </article>
+    </dialog>
+    <script>
+
+        const openbutton = document.getElementById("showdialog")
+        const closebutton = document.getElementById("closedialog")
+        const dialog = document.getElementById("dialogUsername&pass")
+
+        openbutton.addEventListener('click', function(){
+            dialog.showModal();
+        });
+
+        closebutton.addEventListener('click', function(){
+            dialog.close();
+        });
+    </script>
+    <script>
+
+        const openbutton1 = document.getElementById("showdialog2")
+        const closebutton1 = document.getElementById("closedialog2")
+        const dialog1 = document.getElementById("kaupa")
+
+        openbutton1.addEventListener('click', function(){
+            dialog1.showModal();
+        });
+
+        closebutton1.addEventListener('click', function(){
+            dialog1.close();
+        });
+    </script>
+</body>
+</html>
